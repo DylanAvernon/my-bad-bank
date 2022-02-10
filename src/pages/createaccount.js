@@ -19,14 +19,6 @@ function CreateAccount(){
   const [disabled, setDisabled] = useState(false);
   const ctx = useContext(UserContext);  
   
-  // useEffect(() => {
-  //   if (values.name === '' && values.email === '' && values.password === '') {
-  //     setDisabled(true);
-  //   }
-  //   else {
-  //     setDisabled(false);
-  //   }
-  // }, [values])
   function onSubmit(user) {
     ctx.users.push({...user, balance: 100});
     setShow(false);
