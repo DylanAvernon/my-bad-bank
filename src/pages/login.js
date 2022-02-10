@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { UserContext } from '../context/context';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import * as Yup from 'yup';
@@ -38,7 +38,6 @@ function LoginForm() {
   );
 }
 function Login(){
-  const [show, setShow] = useState(true);
   return (
     <Card 
       txtcolor="black"
